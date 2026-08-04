@@ -8,4 +8,17 @@ from pyaudiodb.version import __version__
 
 import pyaudiodb.harvest  # noqa: F401  (import for @register side effects)
 
-__all__ = ["__version__"]
+from pyaudiodb.client import AudioDBClient
+from pyaudiodb.models import (
+    AudioDBArtist,
+    AudioDBAlbum,
+    AudioDBTrack,
+)
+
+__all__ = [
+    "__version__",
+    "AudioDBClient",
+    "AudioDBArtist",
+    "AudioDBAlbum",
+    "AudioDBTrack",
+]
